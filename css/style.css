@@ -8,6 +8,7 @@
 }
 
 .uppernav {
+    z-index: 1;
     width: 100%;
     height: 50px;
     background-color: rgb(44, 62, 80);
@@ -74,6 +75,7 @@ header {
     left: 0;
     right: 0;
     position: relative;
+    box-sizing: border-box;
 }
 
 .center {
@@ -126,11 +128,12 @@ header {
 
 .container {
     width: 100%;
-    height: 550px;
+    height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 100px;
 }
 
 .portfolio {
@@ -154,18 +157,157 @@ header {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 50px;
 }
 
 .uprow {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+}
+
+.downrow {
+    padding: 50px 0px  50px 0px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+.uprow> img{
+    width: 30%;
+}
+.downrow> img{
+    width: 30%;
+}
 
-.underrow {
+.aboutsection{
+    margin-top: 100px;
+    width: 100%;
+    height: 550px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(26, 188, 156);
+}
+.mainabout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.abfrl{
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.frlncinfo{
+    width: 45%;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.dwnld{
+    width: 17%;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+.dwnldicon{
+    font-size: 20px;
+    color: white;
+}
+.span{
+    font-size: 25px;
+    color: white;
+}
+.dwnld:hover{
+    transition: 0.3s;
+    background-color: white;
+}
+.dwnld:hover .dwnldicon{
+    color: black;
+    transition: 0.3s;
+}
+.dwnld:hover .span{
+    transition: 0.3s;
+    color: black;
+}
+.contact{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+#fname{
+    width: 50%;
+}
+footer{
+    width: 100%;
+    background-color: rgb(44, 62, 80);
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.loc, .name{
+    font-size: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.name{
+align-items: center;
+text-align: center;
+font-size: 25px;
+font-weight: 500;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.web{
+    font-size: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.sclcns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.scl{
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
 }
