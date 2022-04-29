@@ -267,6 +267,7 @@ footer{
     align-items: center;
 }
 .location{
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,6 +286,7 @@ font-size: 25px;
 font-weight: 500;
 }
 .social{
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -299,15 +301,47 @@ font-weight: 500;
 .sclcns{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .scl{
+  
+    font-size: 20px;
     color: white;
     border: 1px solid white;
     border-radius: 100%;
     width: 50px;
     height: 50px;
+    display:flex;
     align-items: center;
+    justify-content: center;
+}
+.aboutfooter{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.frlncr{
+    font-size: 35px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.frlnclink{
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.ending{
+    display: flex;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(26,37,47);
+}
+.cpyrght{
+    color: white;
 }
