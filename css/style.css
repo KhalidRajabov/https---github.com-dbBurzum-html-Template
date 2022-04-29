@@ -177,11 +177,37 @@ header {
     justify-content: space-evenly;
     align-items: center;
 }
-.uprow> img{
-    width: 30%;
+.uprow> div{
+    width: 400px;
+    transition: 0.5s;
 }
-.downrow> img{
-    width: 30%;
+.uprow> div:hover{
+    width: 400px;
+    height: 100%;
+    background-color: rgb(26, 188, 156);
+    transition: 0.5s;
+}
+.uprow> div:hover .fck{
+    width: 0;
+    background-color: rgb(26, 188, 156);
+    visibility: 0.5;
+}
+.downrow> div:hover{
+    width: 400px;
+    height: 100%;
+    background-color: rgb(26, 188, 156);
+    transition: 0.5s;
+}
+.downrow> div:hover .fck{
+    width: 0;
+    background-color: rgb(26, 188, 156);
+    visibility: 0.5;
+}
+.downrow> div{
+    width: 400px;
+}
+.fck{
+    width: 100%;
 }
 
 .aboutsection{
